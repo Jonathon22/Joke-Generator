@@ -6,7 +6,6 @@ const seeJokeyJoke = () => {
   $('#Jokey-joke').on('click', () => {
     $('#jokeArea').html('');
     getJoke.getJoke().then((response) => {
-      console.warn(response);
       $('#disjoke').html(`<div class="card" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">Gimme Jokey Joke</h5>
